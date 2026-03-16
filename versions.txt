@@ -976,3 +976,6 @@ proto-google-cloud-vectorsearch-v1:0.8.0:0.9.0-SNAPSHOT
 grpc-google-cloud-vectorsearch-v1:0.8.0:0.9.0-SNAPSHOT
 google-cloud-bigquery:2.61.0:2.62.0-SNAPSHOT
 google-cloud-bigquery-jdbc:0.5.0:0.6.0-SNAPSHOT
+google-cloud-pubsub:1.149.0:1.149.1-SNAPSHOT
+grpc-google-cloud-pubsub-v1:1.131.0:1.131.1-SNAPSHOT
+proto-google-cloud-pubsub-v1:1.131.0:1.131.1-SNAPSHOT
