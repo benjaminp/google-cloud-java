@@ -1076,6 +1076,13 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-pubsub-bom</artifactId>
+        <version>1.149.1-SNAPSHOT</version><!-- {x-version-update:google-cloud-pubsub:current} -->
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-rapidmigrationassessment-bom</artifactId>
         <version>0.71.0-SNAPSHOT</version><!-- {x-version-update:google-cloud-rapidmigrationassessment:current} -->
         <type>pom</type>

@@ -8,7 +8,7 @@
   "transport": "both",
   "language": "java",
   "repo": "googleapis/google-cloud-java",
-  "repo_short": "google-cloud-java",
+  "repo_short": "java-pubsub",
   "distribution_name": "com.google.cloud:google-cloud-pubsub",
   "api_id": "pubsub.googleapis.com",
   "library_type": "GAPIC_COMBO",
