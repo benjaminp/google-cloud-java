@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.83.0](https://github.com/googleapis/google-cloud-java/compare/v1.82.0...v1.83.0) (2026-03-23)
+
+
+### Features
+
+* [ces] update public libraries for CES v1beta ([015d9a1](https://github.com/googleapis/google-cloud-java/commit/015d9a13a2332fcb4d8fa7618506af4914f9c333))
+* [dialogflow-cx] updated v3beta1 dialogflow client libraries with `dtmf_pattern` and `trace_blocks` ([015d9a1](https://github.com/googleapis/google-cloud-java/commit/015d9a13a2332fcb4d8fa7618506af4914f9c333))
+* [discoveryengine] Update DataStoreSpec and add BoostSpec to SearchService ([015d9a1](https://github.com/googleapis/google-cloud-java/commit/015d9a13a2332fcb4d8fa7618506af4914f9c333))
+* **bigquery observability:** add version attribute to span tracing ([#12132](https://github.com/googleapis/google-cloud-java/issues/12132)) ([95c3eb8](https://github.com/googleapis/google-cloud-java/commit/95c3eb8f06007c10ee01c3c999a66d1b86baecdc))
+* **bigquery:** added error attributes to span tracing ([#12115](https://github.com/googleapis/google-cloud-java/issues/12115)) ([863d23b](https://github.com/googleapis/google-cloud-java/commit/863d23bec3acf780a3555931ded611ba91fd76eb))
+
+
+### Documentation
+
+* [run] An existing repeated string field custom_audiences is marked deprecated for WorkerPools API ([015d9a1](https://github.com/googleapis/google-cloud-java/commit/015d9a13a2332fcb4d8fa7618506af4914f9c333))
+
 ## [1.82.0](https://github.com/googleapis/google-cloud-java/compare/v1.81.0...v1.82.0) (2026-03-20)
 
 

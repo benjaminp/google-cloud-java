@@ -4,6 +4,264 @@
     {
       "changes": [
         {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[dialogflow-cx] updated v3beta1 dialogflow client libraries with `dtmf_pattern` and `trace_blocks`",
+          "issues": []
+        },
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[ces] update public libraries for CES v1beta",
+          "issues": []
+        },
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[discoveryengine] Update DataStoreSpec and add BoostSpec to SearchService",
+          "issues": []
+        },
+        {
+          "type": "docs",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[run] An existing repeated string field custom_audiences is marked deprecated for WorkerPools API",
+          "issues": []
+        }
+      ],
+      "version": "1.83.0",
+      "language": "JAVA",
+      "artifactName": "com.google.cloud:google-cloud-visionai",
+      "id": "925652d7-9abd-4e42-a03c-d57f37d8e98d",
+      "createTime": "2026-03-23T23:31:15.692Z"
+    },
+    {
+      "changes": [
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[dialogflow-cx] updated v3beta1 dialogflow client libraries with `dtmf_pattern` and `trace_blocks`",
+          "issues": []
+        },
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[ces] update public libraries for CES v1beta",
+          "issues": []
+        },
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[discoveryengine] Update DataStoreSpec and add BoostSpec to SearchService",
+          "issues": []
+        },
+        {
+          "type": "docs",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[run] An existing repeated string field custom_audiences is marked deprecated for WorkerPools API",
+          "issues": []
+        }
+      ],
+      "version": "1.83.0",
+      "language": "JAVA",
+      "artifactName": "com.google.cloud:google-cloud-trace",
+      "id": "e0076064-d68a-4f02-af53-8af48cba2dde",
+      "createTime": "2026-03-23T23:31:15.561Z"
+    },
+    {
+      "changes": [
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[dialogflow-cx] updated v3beta1 dialogflow client libraries with `dtmf_pattern` and `trace_blocks`",
+          "issues": []
+        },
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[ces] update public libraries for CES v1beta",
+          "issues": []
+        },
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[discoveryengine] Update DataStoreSpec and add BoostSpec to SearchService",
+          "issues": []
+        },
+        {
+          "type": "docs",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[run] An existing repeated string field custom_audiences is marked deprecated for WorkerPools API",
+          "issues": []
+        }
+      ],
+      "version": "1.83.0",
+      "language": "JAVA",
+      "artifactName": "com.google.cloud:google-cloud-run",
+      "id": "68228a20-4c94-4d1b-aec7-43f24bc42418",
+      "createTime": "2026-03-23T23:31:15.326Z"
+    },
+    {
+      "changes": [
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[dialogflow-cx] updated v3beta1 dialogflow client libraries with `dtmf_pattern` and `trace_blocks`",
+          "issues": []
+        },
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[ces] update public libraries for CES v1beta",
+          "issues": []
+        },
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[discoveryengine] Update DataStoreSpec and add BoostSpec to SearchService",
+          "issues": []
+        },
+        {
+          "type": "docs",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[run] An existing repeated string field custom_audiences is marked deprecated for WorkerPools API",
+          "issues": []
+        }
+      ],
+      "version": "1.83.0",
+      "language": "JAVA",
+      "artifactName": "com.google.cloud:google-cloud-discoveryengine",
+      "id": "c1dffb9a-2312-4945-8005-ac1019fa9ce8",
+      "createTime": "2026-03-23T23:31:15.166Z"
+    },
+    {
+      "changes": [
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[dialogflow-cx] updated v3beta1 dialogflow client libraries with `dtmf_pattern` and `trace_blocks`",
+          "issues": []
+        },
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[ces] update public libraries for CES v1beta",
+          "issues": []
+        },
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[discoveryengine] Update DataStoreSpec and add BoostSpec to SearchService",
+          "issues": []
+        },
+        {
+          "type": "docs",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[run] An existing repeated string field custom_audiences is marked deprecated for WorkerPools API",
+          "issues": []
+        }
+      ],
+      "version": "1.83.0",
+      "language": "JAVA",
+      "artifactName": "com.google.cloud:google-cloud-dialogflow-cx",
+      "id": "19801df5-1e36-4729-b76d-d5a68c9cf4d1",
+      "createTime": "2026-03-23T23:31:15.019Z"
+    },
+    {
+      "changes": [
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[dialogflow-cx] updated v3beta1 dialogflow client libraries with `dtmf_pattern` and `trace_blocks`",
+          "issues": []
+        },
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[ces] update public libraries for CES v1beta",
+          "issues": []
+        },
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[discoveryengine] Update DataStoreSpec and add BoostSpec to SearchService",
+          "issues": []
+        },
+        {
+          "type": "docs",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[run] An existing repeated string field custom_audiences is marked deprecated for WorkerPools API",
+          "issues": []
+        }
+      ],
+      "version": "1.83.0",
+      "language": "JAVA",
+      "artifactName": "com.google.cloud:google-cloud-ces",
+      "id": "be905174-9f05-44f9-88f1-92e689078861",
+      "createTime": "2026-03-23T23:31:14.866Z"
+    },
+    {
+      "changes": [
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[dialogflow-cx] updated v3beta1 dialogflow client libraries with `dtmf_pattern` and `trace_blocks`",
+          "issues": []
+        },
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[ces] update public libraries for CES v1beta",
+          "issues": []
+        },
+        {
+          "type": "feat",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[discoveryengine] Update DataStoreSpec and add BoostSpec to SearchService",
+          "issues": []
+        },
+        {
+          "type": "docs",
+          "sha": "015d9a13a2332fcb4d8fa7618506af4914f9c333",
+          "message": "[run] An existing repeated string field custom_audiences is marked deprecated for WorkerPools API",
+          "issues": []
+        }
+      ],
+      "version": "1.83.0",
+      "language": "JAVA",
+      "artifactName": "com.google.cloud:google-cloud-biglake",
+      "id": "18629e67-48ea-4c4d-8a13-a5eae315dec7",
+      "createTime": "2026-03-23T23:31:14.725Z"
+    },
+    {
+      "changes": [
+        {
+          "type": "feat",
+          "sha": "95c3eb8f06007c10ee01c3c999a66d1b86baecdc",
+          "message": "add version attribute to span tracing",
+          "issues": [
+            "12132"
+          ],
+          "scope": "bigquery observability"
+        },
+        {
+          "type": "feat",
+          "sha": "863d23bec3acf780a3555931ded611ba91fd76eb",
+          "message": "added error attributes to span tracing",
+          "issues": [
+            "12115"
+          ],
+          "scope": "bigquery"
+        }
+      ],
+      "version": "1.83.0",
+      "language": "JAVA",
+      "artifactName": "com.google.cloud:google-cloud-bigquery",
+      "id": "711e9bb8-3ba2-4eee-af68-4a799b999ea7",
+      "createTime": "2026-03-23T23:31:14.518Z"
+    },
+    {
+      "changes": [
+        {
           "type": "fix",
           "sha": "6854bbe08d3e785b9df14b43b3c1cbb105960c5e",
           "message": "update dependency com.google.cloud:libraries-bom to v26.72.0",
@@ -222503,5 +222761,5 @@
       "createTime": "2026-02-25T17:30:12.355Z"
     }
   ],
-  "updateTime": "2026-03-20T12:57:32.515Z"
+  "updateTime": "2026-03-23T23:31:15.692Z"
 }
