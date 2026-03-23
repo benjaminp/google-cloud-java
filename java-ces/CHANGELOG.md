@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.0 (2026-03-23)
+
+### Features
+
+* update public libraries for CES v1beta ([015d9a1](https://github.com/googleapis/google-cloud-java/commit/015d9a13a2332fcb4d8fa7618506af4914f9c333))
+
+
+
 ## 0.4.0 (None)
 
 * No change

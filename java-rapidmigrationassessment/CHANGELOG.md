@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.72.0 (2026-03-23)
+
+* No change
+
+
 ## 0.71.0 (None)
 
 * No change

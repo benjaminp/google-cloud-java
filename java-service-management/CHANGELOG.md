@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.87.0 (2026-03-23)
+
+* No change
+
+
 ## 3.86.0 (None)
 
 * No change

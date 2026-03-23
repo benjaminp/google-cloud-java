@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.74.0 (2026-03-23)
+
+* No change
+
+
 ## 1.73.0 (None)
 
 * No change
