@@ -42,11 +42,13 @@ import com.google.api.gax.tracing.ObservabilityAttributes;
 import com.google.api.gax.tracing.SpanTracer;
 import com.google.api.gax.tracing.SpanTracerFactory;
 import com.google.rpc.Status;
+import com.google.showcase.v1beta1.CreateUserRequest;
 import com.google.showcase.v1beta1.EchoClient;
 import com.google.showcase.v1beta1.EchoRequest;
 import com.google.showcase.v1beta1.EchoSettings;
 import com.google.showcase.v1beta1.GetUserRequest;
 import com.google.showcase.v1beta1.IdentityClient;
+import com.google.showcase.v1beta1.User;
 import com.google.showcase.v1beta1.it.util.TestClientInitializer;
 import com.google.showcase.v1beta1.stub.EchoStub;
 import com.google.showcase.v1beta1.stub.EchoStubSettings;
@@ -95,13 +97,14 @@ class ITOtelTracing {
 
   @Test
   void testTracing_successfulIdentityGetUser_grpc() throws Exception {
+		final String username = "users/test-user";
     SpanTracerFactory tracingFactory = new SpanTracerFactory(openTelemetrySdk);
 
     try (IdentityClient client =
         TestClientInitializer.createGrpcIdentityClientOpentelemetry(tracingFactory)) {
 
       try {
-        client.getUser(GetUserRequest.newBuilder().setName("users/test-user").build());
+				client.getUser(GetUserRequest.newBuilder().setName(username).build());
       } catch (Exception e) {
         // Ignored, the showcase server may not have this user, but trace is still generated.
       }
@@ -162,6 +165,13 @@ class ITOtelTracing {
                   .getAttributes()
                   .get(
                       AttributeKey.stringKey(
+                          ObservabilityAttributes.RPC_RESPONSE_STATUS_ATTRIBUTE)))
+          .isEqualTo("OK");
+      assertThat(
+              attemptSpan
+                  .getAttributes()
+                  .get(
+                      AttributeKey.stringKey(
                           ObservabilityAttributes.DESTINATION_RESOURCE_ID_ATTRIBUTE)))
           .isEqualTo("users/test-user");
     }
@@ -169,12 +179,14 @@ class ITOtelTracing {
 
   @Test
   void testTracing_successfulIdentityGetUser_httpjson() throws Exception {
+		final String username = "users/test-user";
     SpanTracerFactory tracingFactory = new SpanTracerFactory(openTelemetrySdk);
 
     try (IdentityClient client =
         TestClientInitializer.createHttpJsonIdentityClientOpentelemetry(tracingFactory)) {
 
       try {
+				client.createUser(CreateUserRequest.newBuilder().setUser(User.newBuilder().setName(username)).build());
         client.getUser(GetUserRequest.newBuilder().setName("users/test-user").build());
       } catch (Exception e) {
         // Ignored, the showcase server may not have this user, but trace is still generated.
@@ -225,6 +237,12 @@ class ITOtelTracing {
                   .getAttributes()
                   .get(AttributeKey.stringKey(ObservabilityAttributes.HTTP_URL_TEMPLATE_ATTRIBUTE)))
           .isEqualTo("v1beta1/{name=users/*}");
+      assertThat(
+              attemptSpan
+                  .getAttributes()
+                  .get(
+                      AttributeKey.longKey(ObservabilityAttributes.HTTP_RESPONSE_STATUS_ATTRIBUTE)))
+          .isEqualTo(200L);
       assertThat(
               attemptSpan
                   .getAttributes()
