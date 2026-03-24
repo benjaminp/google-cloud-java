@@ -14,6 +14,7 @@ for pomFile in $(find . -mindepth 2 -name pom.xml | sort ); do
       [[ "${pomFile}" =~ .*java-bigquery.* ]] || \
       [[ "${pomFile}" =~ .*sdk-platform-java.* ]] || \
       [[ "${pomFile}" =~ .*java-spanner.* ]] || \
+      [[ "${pomFile}" =~ .*java-storage.* ]] || \
       [[ "${pomFile}" =~ .*.github*. ]]; then
     continue
   fi
