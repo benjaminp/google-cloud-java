@@ -561,6 +561,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                   }
                   return requestBuilder.build();
                 })
+            .setResourceNameExtractor(request -> request.getParent())
             .build();
     GrpcCallSettings<DeleteFolderRequest, Empty> deleteFolderTransportSettings =
         GrpcCallSettings.<DeleteFolderRequest, Empty>newBuilder()
@@ -579,6 +580,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                   }
                   return requestBuilder.build();
                 })
+            .setResourceNameExtractor(request -> request.getName())
             .build();
     GrpcCallSettings<GetFolderRequest, Folder> getFolderTransportSettings =
         GrpcCallSettings.<GetFolderRequest, Folder>newBuilder()
@@ -597,6 +599,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                   }
                   return requestBuilder.build();
                 })
+            .setResourceNameExtractor(request -> request.getName())
             .build();
     GrpcCallSettings<ListFoldersRequest, ListFoldersResponse> listFoldersTransportSettings =
         GrpcCallSettings.<ListFoldersRequest, ListFoldersResponse>newBuilder()
@@ -607,6 +610,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                   builder.add(request.getParent(), "bucket", LIST_FOLDERS_0_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getParent())
             .build();
     GrpcCallSettings<RenameFolderRequest, Operation> renameFolderTransportSettings =
         GrpcCallSettings.<RenameFolderRequest, Operation>newBuilder()
@@ -625,6 +629,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                   }
                   return requestBuilder.build();
                 })
+            .setResourceNameExtractor(request -> request.getName())
             .build();
     GrpcCallSettings<DeleteFolderRecursiveRequest, Operation>
         deleteFolderRecursiveTransportSettings =
@@ -645,6 +650,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                       }
                       return requestBuilder.build();
                     })
+                .setResourceNameExtractor(request -> request.getName())
                 .build();
     GrpcCallSettings<GetStorageLayoutRequest, StorageLayout> getStorageLayoutTransportSettings =
         GrpcCallSettings.<GetStorageLayoutRequest, StorageLayout>newBuilder()
@@ -663,6 +669,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                   }
                   return requestBuilder.build();
                 })
+            .setResourceNameExtractor(request -> request.getName())
             .build();
     GrpcCallSettings<CreateManagedFolderRequest, ManagedFolder>
         createManagedFolderTransportSettings =
@@ -683,6 +690,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                       }
                       return requestBuilder.build();
                     })
+                .setResourceNameExtractor(request -> request.getParent())
                 .build();
     GrpcCallSettings<DeleteManagedFolderRequest, Empty> deleteManagedFolderTransportSettings =
         GrpcCallSettings.<DeleteManagedFolderRequest, Empty>newBuilder()
@@ -701,6 +709,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                   }
                   return requestBuilder.build();
                 })
+            .setResourceNameExtractor(request -> request.getName())
             .build();
     GrpcCallSettings<GetManagedFolderRequest, ManagedFolder> getManagedFolderTransportSettings =
         GrpcCallSettings.<GetManagedFolderRequest, ManagedFolder>newBuilder()
@@ -719,6 +728,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                   }
                   return requestBuilder.build();
                 })
+            .setResourceNameExtractor(request -> request.getName())
             .build();
     GrpcCallSettings<ListManagedFoldersRequest, ListManagedFoldersResponse>
         listManagedFoldersTransportSettings =
@@ -739,6 +749,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                       }
                       return requestBuilder.build();
                     })
+                .setResourceNameExtractor(request -> request.getParent())
                 .build();
     GrpcCallSettings<CreateAnywhereCacheRequest, Operation> createAnywhereCacheTransportSettings =
         GrpcCallSettings.<CreateAnywhereCacheRequest, Operation>newBuilder()
@@ -757,6 +768,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                   }
                   return requestBuilder.build();
                 })
+            .setResourceNameExtractor(request -> request.getParent())
             .build();
     GrpcCallSettings<UpdateAnywhereCacheRequest, Operation> updateAnywhereCacheTransportSettings =
         GrpcCallSettings.<UpdateAnywhereCacheRequest, Operation>newBuilder()
@@ -800,6 +812,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                       }
                       return requestBuilder.build();
                     })
+                .setResourceNameExtractor(request -> request.getName())
                 .build();
     GrpcCallSettings<PauseAnywhereCacheRequest, AnywhereCache> pauseAnywhereCacheTransportSettings =
         GrpcCallSettings.<PauseAnywhereCacheRequest, AnywhereCache>newBuilder()
@@ -818,6 +831,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                   }
                   return requestBuilder.build();
                 })
+            .setResourceNameExtractor(request -> request.getName())
             .build();
     GrpcCallSettings<ResumeAnywhereCacheRequest, AnywhereCache>
         resumeAnywhereCacheTransportSettings =
@@ -838,6 +852,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                       }
                       return requestBuilder.build();
                     })
+                .setResourceNameExtractor(request -> request.getName())
                 .build();
     GrpcCallSettings<GetAnywhereCacheRequest, AnywhereCache> getAnywhereCacheTransportSettings =
         GrpcCallSettings.<GetAnywhereCacheRequest, AnywhereCache>newBuilder()
@@ -856,6 +871,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                   }
                   return requestBuilder.build();
                 })
+            .setResourceNameExtractor(request -> request.getName())
             .build();
     GrpcCallSettings<ListAnywhereCachesRequest, ListAnywhereCachesResponse>
         listAnywhereCachesTransportSettings =
@@ -876,6 +892,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                       }
                       return requestBuilder.build();
                     })
+                .setResourceNameExtractor(request -> request.getParent())
                 .build();
     GrpcCallSettings<GetProjectIntelligenceConfigRequest, IntelligenceConfig>
         getProjectIntelligenceConfigTransportSettings =
@@ -887,6 +904,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                       builder.add("name", String.valueOf(request.getName()));
                       return builder.build();
                     })
+                .setResourceNameExtractor(request -> request.getName())
                 .build();
     GrpcCallSettings<UpdateProjectIntelligenceConfigRequest, IntelligenceConfig>
         updateProjectIntelligenceConfigTransportSettings =
@@ -912,6 +930,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                       builder.add("name", String.valueOf(request.getName()));
                       return builder.build();
                     })
+                .setResourceNameExtractor(request -> request.getName())
                 .build();
     GrpcCallSettings<UpdateFolderIntelligenceConfigRequest, IntelligenceConfig>
         updateFolderIntelligenceConfigTransportSettings =
@@ -937,6 +956,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                       builder.add("name", String.valueOf(request.getName()));
                       return builder.build();
                     })
+                .setResourceNameExtractor(request -> request.getName())
                 .build();
     GrpcCallSettings<UpdateOrganizationIntelligenceConfigRequest, IntelligenceConfig>
         updateOrganizationIntelligenceConfigTransportSettings =
@@ -962,6 +982,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                   builder.add(request.getResource(), "bucket", GET_IAM_POLICY_1_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getResource())
             .build();
     GrpcCallSettings<SetIamPolicyRequest, Policy> setIamPolicyTransportSettings =
         GrpcCallSettings.<SetIamPolicyRequest, Policy>newBuilder()
@@ -973,6 +994,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                   builder.add(request.getResource(), "bucket", SET_IAM_POLICY_1_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getResource())
             .build();
     GrpcCallSettings<TestIamPermissionsRequest, TestIamPermissionsResponse>
         testIamPermissionsTransportSettings =
@@ -989,6 +1011,7 @@ public class GrpcStorageControlStub extends StorageControlStub {
                           request.getResource(), "bucket", TEST_IAM_PERMISSIONS_2_PATH_TEMPLATE);
                       return builder.build();
                     })
+                .setResourceNameExtractor(request -> request.getResource())
                 .build();
 
     this.createFolderCallable =

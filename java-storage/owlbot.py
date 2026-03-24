@@ -24,16 +24,18 @@ for library in s.get_staging_dirs():
         os.remove('owl-bot-staging/v2/gapic-google-cloud-storage-v2/src/main/java/com/google/storage/v2/gapic_metadata.json')
     s.move(library)
 s.remove_staging_dirs()
-java.common_templates(monorepo=True, excludes=[
-    ".github/*",
-    ".kokoro/*",
-    "samples/*",
-    "CODE_OF_CONDUCT.md",
-    "CONTRIBUTING.md",
-    "LICENSE",
-    "SECURITY.md",
-    "java.header",
-    "license-checks.xml",
-    "renovate.json",
-    ".gitignore"
+java.common_templates(
+    monorepo=True, 
+    excludes=[
+        ".github/*",
+        ".kokoro/*",
+        "samples/*",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "LICENSE",
+        "SECURITY.md",
+        "java.header",
+        "license-checks.xml",
+        "renovate.json",
+        ".gitignore"
 ])

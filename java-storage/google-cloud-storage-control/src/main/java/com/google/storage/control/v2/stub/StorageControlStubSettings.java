@@ -755,7 +755,8 @@ public class StorageControlStubSettings extends StubSettings<StorageControlStubS
   protected LibraryMetadata getLibraryMetadata() {
     return LibraryMetadata.newBuilder()
         .setArtifactName("com.google.cloud:google-cloud-storage")
-        .setRepository("googleapis/java-storage")
+        .setRepository("googleapis/google-cloud-java")
+        .setVersion(Version.VERSION)
         .build();
   }
 

@@ -417,6 +417,7 @@ public class HttpJsonStorageControlStub extends StorageControlStub {
                       builder.add("name", String.valueOf(request.getName()));
                       return builder.build();
                     })
+                .setResourceNameExtractor(request -> request.getName())
                 .build();
     HttpJsonCallSettings<UpdateProjectIntelligenceConfigRequest, IntelligenceConfig>
         updateProjectIntelligenceConfigTransportSettings =
@@ -445,6 +446,7 @@ public class HttpJsonStorageControlStub extends StorageControlStub {
                       builder.add("name", String.valueOf(request.getName()));
                       return builder.build();
                     })
+                .setResourceNameExtractor(request -> request.getName())
                 .build();
     HttpJsonCallSettings<UpdateFolderIntelligenceConfigRequest, IntelligenceConfig>
         updateFolderIntelligenceConfigTransportSettings =
@@ -473,6 +475,7 @@ public class HttpJsonStorageControlStub extends StorageControlStub {
                       builder.add("name", String.valueOf(request.getName()));
                       return builder.build();
                     })
+                .setResourceNameExtractor(request -> request.getName())
                 .build();
     HttpJsonCallSettings<UpdateOrganizationIntelligenceConfigRequest, IntelligenceConfig>
         updateOrganizationIntelligenceConfigTransportSettings =

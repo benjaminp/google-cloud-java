@@ -473,6 +473,7 @@ public class GrpcStorageStub extends StorageStub {
                   builder.add(request.getName(), "bucket", DELETE_BUCKET_0_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getName())
             .build();
     GrpcCallSettings<GetBucketRequest, Bucket> getBucketTransportSettings =
         GrpcCallSettings.<GetBucketRequest, Bucket>newBuilder()
@@ -483,6 +484,7 @@ public class GrpcStorageStub extends StorageStub {
                   builder.add(request.getName(), "bucket", GET_BUCKET_0_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getName())
             .build();
     GrpcCallSettings<CreateBucketRequest, Bucket> createBucketTransportSettings =
         GrpcCallSettings.<CreateBucketRequest, Bucket>newBuilder()
@@ -497,6 +499,7 @@ public class GrpcStorageStub extends StorageStub {
                   }
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getParent())
             .build();
     GrpcCallSettings<ListBucketsRequest, ListBucketsResponse> listBucketsTransportSettings =
         GrpcCallSettings.<ListBucketsRequest, ListBucketsResponse>newBuilder()
@@ -507,6 +510,7 @@ public class GrpcStorageStub extends StorageStub {
                   builder.add(request.getParent(), "project", LIST_BUCKETS_0_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getParent())
             .build();
     GrpcCallSettings<LockBucketRetentionPolicyRequest, Bucket>
         lockBucketRetentionPolicyTransportSettings =
@@ -521,6 +525,7 @@ public class GrpcStorageStub extends StorageStub {
                           LOCK_BUCKET_RETENTION_POLICY_0_PATH_TEMPLATE);
                       return builder.build();
                     })
+                .setResourceNameExtractor(request -> request.getBucket())
                 .build();
     GrpcCallSettings<GetIamPolicyRequest, Policy> getIamPolicyTransportSettings =
         GrpcCallSettings.<GetIamPolicyRequest, Policy>newBuilder()
@@ -532,6 +537,7 @@ public class GrpcStorageStub extends StorageStub {
                   builder.add(request.getResource(), "bucket", GET_IAM_POLICY_1_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getResource())
             .build();
     GrpcCallSettings<SetIamPolicyRequest, Policy> setIamPolicyTransportSettings =
         GrpcCallSettings.<SetIamPolicyRequest, Policy>newBuilder()
@@ -543,6 +549,7 @@ public class GrpcStorageStub extends StorageStub {
                   builder.add(request.getResource(), "bucket", SET_IAM_POLICY_1_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getResource())
             .build();
     GrpcCallSettings<TestIamPermissionsRequest, TestIamPermissionsResponse>
         testIamPermissionsTransportSettings =
@@ -559,6 +566,7 @@ public class GrpcStorageStub extends StorageStub {
                           request.getResource(), "bucket", TEST_IAM_PERMISSIONS_2_PATH_TEMPLATE);
                       return builder.build();
                     })
+                .setResourceNameExtractor(request -> request.getResource())
                 .build();
     GrpcCallSettings<UpdateBucketRequest, Bucket> updateBucketTransportSettings =
         GrpcCallSettings.<UpdateBucketRequest, Bucket>newBuilder()
@@ -587,6 +595,7 @@ public class GrpcStorageStub extends StorageStub {
                   }
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getKmsKey())
             .build();
     GrpcCallSettings<DeleteObjectRequest, Empty> deleteObjectTransportSettings =
         GrpcCallSettings.<DeleteObjectRequest, Empty>newBuilder()
@@ -597,6 +606,7 @@ public class GrpcStorageStub extends StorageStub {
                   builder.add(request.getBucket(), "bucket", DELETE_OBJECT_0_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getBucket())
             .build();
     GrpcCallSettings<RestoreObjectRequest, Object> restoreObjectTransportSettings =
         GrpcCallSettings.<RestoreObjectRequest, Object>newBuilder()
@@ -607,6 +617,7 @@ public class GrpcStorageStub extends StorageStub {
                   builder.add(request.getBucket(), "bucket", RESTORE_OBJECT_0_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getBucket())
             .build();
     GrpcCallSettings<CancelResumableWriteRequest, CancelResumableWriteResponse>
         cancelResumableWriteTransportSettings =
@@ -629,6 +640,7 @@ public class GrpcStorageStub extends StorageStub {
                   builder.add(request.getBucket(), "bucket", GET_OBJECT_0_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getBucket())
             .build();
     GrpcCallSettings<ReadObjectRequest, ReadObjectResponse> readObjectTransportSettings =
         GrpcCallSettings.<ReadObjectRequest, ReadObjectResponse>newBuilder()
@@ -639,6 +651,7 @@ public class GrpcStorageStub extends StorageStub {
                   builder.add(request.getBucket(), "bucket", READ_OBJECT_0_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getBucket())
             .build();
     GrpcCallSettings<BidiReadObjectRequest, BidiReadObjectResponse>
         bidiReadObjectTransportSettings =
@@ -687,6 +700,7 @@ public class GrpcStorageStub extends StorageStub {
                   builder.add(request.getParent(), "bucket", LIST_OBJECTS_0_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getParent())
             .build();
     GrpcCallSettings<RewriteObjectRequest, RewriteResponse> rewriteObjectTransportSettings =
         GrpcCallSettings.<RewriteObjectRequest, RewriteResponse>newBuilder()
@@ -700,6 +714,7 @@ public class GrpcStorageStub extends StorageStub {
                       request.getDestinationBucket(), "bucket", REWRITE_OBJECT_1_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getDestinationBucket())
             .build();
     GrpcCallSettings<StartResumableWriteRequest, StartResumableWriteResponse>
         startResumableWriteTransportSettings =
@@ -739,6 +754,7 @@ public class GrpcStorageStub extends StorageStub {
                   builder.add(request.getBucket(), "bucket", MOVE_OBJECT_0_PATH_TEMPLATE);
                   return builder.build();
                 })
+            .setResourceNameExtractor(request -> request.getBucket())
             .build();
 
     this.deleteBucketCallable =
