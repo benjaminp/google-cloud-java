@@ -1014,3 +1014,10 @@ google-cloud-spanner:6.112.0:6.112.1-SNAPSHOT
 google-cloud-spanner-executor:6.112.0:6.112.1-SNAPSHOT
 proto-google-cloud-spanner-executor-v1:6.112.0:6.112.1-SNAPSHOT
 grpc-google-cloud-spanner-executor-v1:6.112.0:6.112.1-SNAPSHOT
+google-cloud-storage:2.64.0:2.64.1-SNAPSHOT
+gapic-google-cloud-storage-v2:2.64.0:2.64.1-SNAPSHOT
+grpc-google-cloud-storage-v2:2.64.0:2.64.1-SNAPSHOT
+proto-google-cloud-storage-v2:2.64.0:2.64.1-SNAPSHOT
+google-cloud-storage-control:2.64.0:2.64.1-SNAPSHOT
+proto-google-cloud-storage-control-v2:2.64.0:2.64.1-SNAPSHOT
+grpc-google-cloud-storage-control-v2:2.64.0:2.64.1-SNAPSHOT
