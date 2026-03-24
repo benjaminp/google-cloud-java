@@ -30,6 +30,7 @@ excluded_modules=(
   'sdk-platform-java/java-showcase-3.21.0'
   'sdk-platform-java/java-showcase-3.25.8'
   'java-spanner'
+  'java-storage'
 )
 
 function retry_with_backoff {
