@@ -79,10 +79,6 @@
         <version>2.64.1-SNAPSHOT</version><!-- {x-version-update:google-cloud-storage:current} -->
       </dependency>
       <dependency>
-        <groupId>com.google.apis</groupId>
-        <artifactId>google-api-services-storage</artifactId>
-      </dependency>
-      <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-pubsub</artifactId>
         <version>1.150.0</version>
