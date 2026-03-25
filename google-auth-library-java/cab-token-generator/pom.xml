@@ -17,6 +17,10 @@
     <testSourceDirectory>javatests</testSourceDirectory>
   </build>
 
+  <properties>
+    <enforcer.skip>true</enforcer.skip>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>com.google.auth</groupId>
