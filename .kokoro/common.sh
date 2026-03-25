@@ -31,6 +31,7 @@ excluded_modules=(
   'sdk-platform-java/java-showcase-3.25.8'
   'java-spanner'
   'java-spanner-jdbc'
+  'google-auth-library-java'
 )
 
 function retry_with_backoff {
